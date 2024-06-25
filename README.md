@@ -3,11 +3,6 @@ Aqui encontramos el efecto matrix.
 
 <h2>Aspectos a considerar</h2>
 
-* Para lograr que fuera responsive agregamos al canvas
-las siguientes propiedades dentro de nuestra hoja de estilo (css):<br>
-width: 100%;<br>
-height: 100vh;<br>
-
 * Si se desean mas letras en el efecto matrix, será necesario
 cambiar la siguiente linea de código en nuestro javascript:<br>
 
