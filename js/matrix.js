@@ -3,6 +3,7 @@ let matrixEspacio=document.querySelector("#matrix"),
     matrix_color=document.querySelector("#matrix-color"),
     MEWidth=window.screen.width,
     MEHeight=window.screen.height,
+
     //miramos la cantidad de columnas a imprimir. 20px cada letra
     column=Math.floor(MEWidth/20)+1,
     yPosicion=Array(column).fill(1);
@@ -10,6 +11,18 @@ let matrixEspacio=document.querySelector("#matrix"),
 //Damos tamaño a nuestro canvas (matrixEspacio)
 matrixEspacio.width=MEWidth;
 matrixEspacio.height=MEHeight;
+
+
+//ocultamos el input de colores
+matrix_color.style.opacity=0;
+
+matrix_color.addEventListener('mouseover',()=>{
+    matrix_color.style.opacity=1;
+})
+
+matrix_color.addEventListener('mouseout',()=>{
+    matrix_color.style.opacity=0;
+})
 
 function matrix(){
     //pintamos el fondo para que desvanescan las letras
